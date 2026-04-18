@@ -1,4 +1,4 @@
-# lab-week04-MonTue
+# Lab Week 4 - Monday Tuesday
 ## Raspberry Pi Pico Introduction
 This lab we will start using the Raspberry Pi Pico. We will go over how to set it up and use it and then there will be a series of short excercises going over how to use specific functionality for the pico.
 
@@ -120,4 +120,18 @@ long map(long x, long in_min, long in_max, long out_min, long out_max) {
 ```
 
 ## Raspberry Pi Pico Debug Probe
+If you have the Raspberry Pi Debug Probe, you can use it to debug your code using GDB. In CS/EE120B, you had to use print statements to debug your code which could get tedious and annoying. While you can still do that with the pico, the debug probe alliws you to debug easier. 
 
+To start debugging with the probe, press the "Debug Project" option in the Pico Project tab. This will allow you to debug directly in VScode. After the debug session starts, you will see a small task bar somewhere on your screeen(usually at the top of your VScode) with the debug functions.
+
+![](./pics/debugBar.png)
+
+From this task bar, you can run your code, pause it, step over a function, step into a function, step out of a function and stop the debug section. In the tab with your actual code, you will see a line that is highlighted. This is the line you are currently at. You will only see this highlighted line when your code is paused. You can then use the debug bar to follow the execution of your code and see what is being executed. The "Step Over" button just executes the line you are at. If you are at a function, you can use the "Step Into" button to actually go into that function and see what is being executed. You can then use the "Step Out" button to go back if you don't want to follow the execution of the entire funciton. While doing this, you can actually see the value of different variables in a tab at the top left of your VScode window.
+
+![](./pics/debugVariables.png)
+
+### Breakpoints
+Sometimes, the part of your code you want to debug is difficult to get to one line at a time or difficult to stop at. In order to debug more acurately, you can use breakpoints. You can pick lines in your code to automaticaly stop at when debugging, that you can then analyze more in depth using what was mentioned above. To set a break point, just click to the left of the line you want to break at. A red dot will then appear next to the line number showing that a breakpoint has been set there. Sometimes a line cannot have a breakpoint so when clicking to add the red dot, it will instead place a breakpoint at the next possible line. After setting a breakpoint, you can press the "Continue" button and your program will automatically stop when it reaches the line you placed the breakpoint at.
+
+## Submission
+This will be a single session lab so it will be due Monday week 5(4/27). You can just submit your code for the 3 exercises on gradescope along with your final CMakeLists.txt file.
