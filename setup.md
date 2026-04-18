@@ -36,4 +36,4 @@ Once everything is connect on the debug probe and both the probe and pico are co
 >Note: If you are on Windows and you did not install the drivers from option 2, you might need to install them for this option.
 
 ## Setup Conclusion
-If you were able to follow the instructions above and got the blink sample program working, you should be able to start working on the actuall exercises.
+If you were able to follow the instructions above and got the blink sample program working, you should be able to start working on the actual exercises.
