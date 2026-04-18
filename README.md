@@ -46,7 +46,7 @@ After initializing pins, you still need to tell the pico if they are input or ou
     - Ex: ` gpio_set_dir_all_bits(0b1100);` sets gpio pins 0 and 1 to input and pins 2 and 3 to output.
 
 ### Controlling Output Pins
-Again there aer multiple functions that can be used in order to control outputs. We will go over a couple of useful ones here.
+Again, there are multiple functions that can be used in order to control outputs. We will go over a couple of useful ones here.
 
 1. `gpio_put(uint gpio, bool value);`
     - This function sets a single gpio pin to `1` or `0`. 
