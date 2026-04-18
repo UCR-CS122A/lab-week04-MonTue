@@ -132,6 +132,7 @@ From this task bar, you can run your code, pause it, step over a function, step 
 
 ### Breakpoints
 Sometimes, the part of your code you want to debug is difficult to get to one line at a time or difficult to stop at. In order to debug more acurately, you can use breakpoints. You can pick lines in your code to automaticaly stop at when debugging, that you can then analyze more in depth using what was mentioned above. To set a break point, just click to the left of the line you want to break at. A red dot will then appear next to the line number showing that a breakpoint has been set there. Sometimes a line cannot have a breakpoint so when clicking to add the red dot, it will instead place a breakpoint at the next possible line. After setting a breakpoint, you can press the "Continue" button and your program will automatically stop when it reaches the line you placed the breakpoint at.
+
 ![](./pics/breakpoint.png)
 
 ## Submission
