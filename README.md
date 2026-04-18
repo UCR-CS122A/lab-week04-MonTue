@@ -110,7 +110,7 @@ target_link_libraries(PicoLab
 
 Once that is done, you can then initialize ADC functionality by running `adc_init();`. You will then need to initialize the adc pin you will use by running `adc_gpio_init(26);`.
 
-To read an analog input, you need to use 2 functions. The first is `adc_select_input(uint input);`. This function determines which ADC channel to use for ADC(gpio pin 26 is ADC0 so you will need to so `adc_select_input(0)`). After that, you can just use `adc_read()` to read it. The range of values that the ADC returns is [0,4095]. 
+To read an analog input, you need to use 2 functions. The first is `adc_select_input(uint input);`. This function determines which ADC channel to use for ADC(gpio pin 26 is ADC0 so you will need to do `adc_select_input(0)`). After that, you can just use `adc_read()` to read it. The range of values that the ADC returns is [0,4095]. 
 
 ### Map function from CS/EE120B
 ```C
@@ -120,7 +120,7 @@ long map(long x, long in_min, long in_max, long out_min, long out_max) {
 ```
 
 ## Raspberry Pi Pico Debug Probe
-If you have the Raspberry Pi Debug Probe, you can use it to debug your code using GDB. In CS/EE120B, you had to use print statements to debug your code which could get tedious and annoying. While you can still do that with the pico, the debug probe alliws you to debug easier. 
+If you have the Raspberry Pi Debug Probe, you can use it to debug your code using GDB. In CS/EE120B, you had to use print statements to debug your code which could get tedious and annoying. While you can still do that with the pico, the debug probe allows you to debug easier. 
 
 To start debugging with the probe, press the "Debug Project" option in the Pico Project tab. This will allow you to debug directly in VScode. After the debug session starts, you will see a small task bar somewhere on your screeen(usually at the top of your VScode) with the debug functions.
 
