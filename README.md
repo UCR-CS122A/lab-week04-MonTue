@@ -20,7 +20,7 @@ Go through [setup.md](setup.md) in order to learn how to program the pico.
 The first exercise will go over how to initialize pins and use them as inputs and outputs. You will make a simple counter that increments with one button and decrements with another. Each button press should only increment or decrement by 1. The counter will be displayed in binary on 4 LEDs. Since we will be using 4 LEDs, the possible values will be 0-15. You can decide what happens when incrementing at 15 or decrementing at 0.
 
 ### Wiring
-Connect 4 LEDs to GPIO pins 2-5. Connect 2 buttons to GPIO pins 6 and 7.
+Connect 4 LEDs to GPIO pins 2-5. Connect 2 buttons to GPIO pins 6 and 7. Use the 3.3V(out) pin for power.
 
 ### Project Creation
 Press the "New C/C++ Project" in the Pico Project tab. In the newly opened "New Pico Project" tab, give your project a name and pick the correct board type. You do not need to add any features here. You can add them later. You can check one of the boxes for "Stdio support" if you plan on using `printf` and other stdio functions. Just make sure to run `stdio_init_all();` at the beginning of your main if you plan on doing so. Pick the default option for the debugger and then create your project. Once your project opens, add `#include "hardware/gpio.h"` at the top to allow gpio usage.
